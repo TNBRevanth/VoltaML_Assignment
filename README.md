@@ -1,0 +1,31 @@
+# VoltaML_Assignment
+Tasks relevant to the Deep Learning Engineer role VoltaML Assignment 
+//
+# Mask Detection
+In order to combat the COVID-19 pandemic, a variety of measures have been taken. In order to prevent the spread of the virus, wearing a mask is one way to do so. 
+The aim of this work is to detect if a person is wearing a mask or not. With this objective, a machine learning model is developed which leverages transfer learning to detect face mask. The training data for this model is collected from multiple sources. <br>
+
+For collecting human faces with mask, a subset (1000 images) of the MAFA dataset is used.<br>
+The dataset can be found in http://www.escience.cn/people/geshiming/mafa.html<br>
+For collecting human faces without mask, a subset of (1000 images) the UTKFace dataset is used.<br>
+The dataset can be found in https://susanqq.github.io/UTKFace/ <br>
+
+Finally, the trained model is used to detect a human face with/without face mask in real-time using webcam feed.<br>
+
+• Keras is used to develop the model. <br>
+• Resnet-50 is used to train the model. <br>
+• Data augmentation (horizontal and vertical shift, flip) is performed as a preprocessing step. <br>
+• 99% accuracy is achieved while testing with hold-out images. <br>
+• OpenCV is used to detect the face mask in real time.<br>
+
+# Training Data
+The training data of this model can be found in the following link:<br>
+https://www.dropbox.com/sh/20zrofhd10f3dev/AACBL2j6I4fu9KrDLBhWI5U2a?dl=0
+
+<img src="maskOrNoMask.gif" width="70%">
+
+# Performance
+![Training Performace](performance.PNG)
+
+# How to run:
+For code and performance, check the maskDetection.ipynb file. To run the face mask detection application a webcam must be plugged in. Run the MaskOrNot.py file to detect if any person is wearing a face mask or not.
